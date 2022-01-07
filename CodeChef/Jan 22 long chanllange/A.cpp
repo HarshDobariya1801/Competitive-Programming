@@ -20,42 +20,12 @@ void solve() {
 	int t;
 	cin >> t;
 	while (t--) {
-		int n, sum = 0, multiple = 1, cnt = 0; cin >> n;
-		int a[n];
-		fo(i, n) {
-			cin >> a[i];
-		}
-
-		fo(i, n) {
-			sum = sum + a[i];
-			multiple = multiple * a[i];
-		}
-
-		//cout << sum << " " << multiple << endl;
-
-		if (sum != 0 && multiple != 0) {
-			cout << cnt << endl;
-		} else {
-			cnt++;
-			fo(i, n) {
-				a[0] = a[0] + 1;
-				if (a[i] == 0) {
-					a[i] = a[i] + 1;
-					cnt++;
-				}
-
-
-				sum = sum + a[i];
-				multiple = multiple * a[i];
-				if (sum != 0 && multiple != 0) {
-					cout << cnt << endl;
-					continue;
-				}
-			}
-		}
+		double t1, t2, r1, r2;
+		cin >> t1 >> t2 >> r1 >> r2;
+		if ((t1 * t1 / (r1 * r1 * r1)) == (t2 * t2 / (r2 * r2 * r2))) cy;
+		else cn;
 	}
 }
-
 
 int main() {
 	solve();
